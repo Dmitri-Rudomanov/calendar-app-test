@@ -4,7 +4,8 @@ import 'react-dropdown/style.css';
 import { 
     CalenderHeaderContainer,
     DropdownContainer,
-    AppointmentButton
+    AppointmentButton,
+    DropdownLabel,
 } from '../styledComponent/index';
 
 import { yearOptions, monthOptions } from '../constant/index';
@@ -27,12 +28,14 @@ function CalenderHeader( props ) {
 
     return (
       <CalenderHeaderContainer>
-          <DropdownContainer>
+            <DropdownContainer>
+            <DropdownLabel>Year</DropdownLabel>
             <Dropdown 
                 options={yearOptions} 
                 onChange={onYearSelect} 
                 value={props.defaultYear} 
-            />
+                />
+            <DropdownLabel>Month</DropdownLabel>
             <Dropdown 
                 options={monthOptions} 
                 onChange={onMonthSelect} 

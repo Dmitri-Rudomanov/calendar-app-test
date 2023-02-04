@@ -134,7 +134,7 @@ export const AppointmentContainer = styled.div`
   width: 100%;
   color: #fff;
   background: #000080;
-  height: 25px;
+  max-height:55px;
   margin-bottom: 3px;
 `
 
@@ -161,6 +161,12 @@ export const CalenderHeaderContainer = styled.div`
 
 export const DropdownContainer = styled.div`
     display: flex;
+`
+export const DropdownLabel = styled.div`
+    display: flex;
+    align-items:center;
+    font-weight:500;
+    padding:0 10px;
 `
 
 export const AppointmentButton = styled.button`

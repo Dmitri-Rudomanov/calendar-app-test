@@ -70,7 +70,7 @@ function FormModal(props) {
             </InputContainer>
             <InputContainer>
               <InputSpan>Time:</InputSpan>
-              <InputField {...register("Time")} type="number" min="1" max="12" placeholder="Type a number 1 - 12"></InputField>
+              <InputField {...register("Time")} type="number" min="0" max="24" placeholder="Type a number 0 - 24"></InputField>
             </InputContainer>
           </ModalBody>
           <ModalFooter>
